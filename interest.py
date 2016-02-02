@@ -1,8 +1,6 @@
 
 # coding: utf-8
 
-# In[264]:
-
 import pandas as pd
 import numpy as np
 #from sklearn.ensemble import RandomForestRegressor
