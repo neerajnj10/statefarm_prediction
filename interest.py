@@ -124,3 +124,17 @@ clf.fit(train_data,train_y)
 
 glf = GradientBoostingRegressor(n_estimators=100, learning_rate=1.0, max_depth=1)
 glf.fit(train_data, train_y)
+
+#prep test data.
+test_X = test_X.drop(['X1', 'X8', 'X10', 'X16', 'X18', 'X19','X20'], axis=1) 
+#changing to arrays. 
+test_data = test_X.values
+
+#adaboost prediction.
+y_clf = clf.predict(test_data)
+y_clf
+
+"""
+array([ 13.35,   6.03,  11.67, ...,  12.49,  12.49,  10.99])
+"""
+
